@@ -2,6 +2,9 @@
 
 This simple tool helps you extract domains from certs using **Subject Alternative Names (SANs)**
 
+## 🙌 Inspiration
+This script was inspired by the awesome work done in [cero by glebarez](https://github.com/glebarez/cero) and was created in Python just for fun! The simplicity and focus of `cero` motivated me to build a tool specifically for extracting SANs from SSL certificates. Check it out for more great SSL certificate insights!
+
 ## 🔧 Requirements
 - Python 3.x
 
