@@ -22,7 +22,7 @@ def get_cert_domains(hostname, port=443):
 
     return san_list
 
-parser = OptionParser()
+parser = OptionParser(usage="usage: %prog --help")
 parser.add_option("--hostname", dest="hostname",
                   help="hostname", metavar="HOSTNAME")
 parser.add_option("--port", dest="port",
@@ -33,9 +33,7 @@ parser.add_option("--output", dest="output",
 (options, args) = parser.parse_args()
 
 if options.hostname is None:
-    print("Error: --hostname is required")
-    print(parser.usage)
-    sys.exit(1)
+    parser.error("Error: --hostname is required")
 
 hostname = options.hostname
 port = options.port
