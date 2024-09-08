@@ -12,8 +12,8 @@ This script was inspired by the awesome work done in [cero by glebarez](https://
 Clone the repo and navigate to the project directory:
 
 ```bash
-git clone https://github.com/yourusername/ssl-cert-sans-extractor.git
-cd ssl-cert-sans-extractor
+git clone https://github.com/girorme/sslsans.git
+cd sslsans
 ```
 
 ## ⚡ Usage
