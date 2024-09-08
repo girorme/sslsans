@@ -19,14 +19,14 @@ cd ssl-cert-sans-extractor
 To fetch the SANs for a given host (e.g., `example.com`), run:
 
 ```bash
-python3 ssl_sans_extractor.py --hostname https://example.com
+python3 sslsans.py --hostname https://example.com
 ```
 
 ### Specifying a Port
 By default, it connects over port 443, but you can specify a different port if needed:
 
 ```bash
-python3 ssl_sans_extractor.py --hostname https://example.com --port 8443
+python3 sslsans.py --hostname https://example.com --port 8443
 ```
 
 ### Output Formats
@@ -34,12 +34,12 @@ You can specify the output format as either `text` or `json`.
 
 #### Text Output (default):
 ```bash
-python3 ssl_sans_extractor.py --hostname https://example.com --output text
+python3 sslsans.py --hostname https://example.com --output text
 ```
 
 #### JSON Output:
 ```bash
-python3 ssl_sans_extractor.py --hostname https://example.com --output json
+python3 sslsans.py --hostname https://example.com --output json
 ```
 
 ### Example Output
